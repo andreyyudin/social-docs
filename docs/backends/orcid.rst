@@ -1,5 +1,5 @@
 ORCID
-===============================
+=====
 
 ORCID_ uses OAuth 2 for authentication.
 
@@ -13,6 +13,9 @@ ORCID_ uses OAuth 2 for authentication.
 
       SOCIAL_AUTH_ORCID_KEY = ''
       SOCIAL_AUTH_ORCID_SECRET = ''
+
+- Use ``'social_core.backends.orcid.ORCIDOAuth2'`` class in your
+  ``SOCIAL_AUTH_AUTHENTICATION_BACKENDS``.
 
 Member API
 ----------
@@ -34,6 +37,11 @@ but use these instead::
 
 Sandbox is also available for Member API. You will have to register for with
 ORCID it `separately`_.
+
+Use
+``'social_core.backends.orcid.ORCIDOAuth2Sandbox'`` or
+``'social_core.backends.orcid.ORCIDMemberOAuth2Sandbox'`` class in your
+``SOCIAL_AUTH_AUTHENTICATION_BACKENDS``.
 
 .. _ORCID: https://orcid.org/
 .. _Developer tools: https://orcid.org/developer-tools
